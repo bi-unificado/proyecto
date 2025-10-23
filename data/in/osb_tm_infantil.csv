@@ -1,0 +1,419 @@
+ANIO;LOCALIDAD;N_MUERTES;NACIDOS_VIVOS;TASA POR 1000
+2007;Antonio Nariño;15;1191;12.6
+2007;Barrios Unidos;25;1828;13.7
+2007;Bosa;134;10057;13.3
+2007;Chapinero;17;1808;9.4
+2007;Ciudad Bolívar;170;11588;14.7
+2007;Distrito;1620;117228;13.8
+2007;Engativá;153;12057;12.7
+2007;Fontibón;64;5364;11.9
+2007;Kennedy;195;15171;12.9
+2007;La Candelaria;6;231;26.0
+2007;Los Mártires;19;1489;12.8
+2007;Puente Aranda;49;4051;12.1
+2007;Rafael Uribe Uribe;106;6836;15.5
+2007;San Cristóbal;119;8016;14.8
+2007;Santa Fe;45;2231;20.2
+2007;Sin Información;79;2389;
+2007;Suba;208;15608;13.3
+2007;Sumapaz;1;50;20.0
+2007;Teusaquillo;21;1217;17.3
+2007;Tunjuelito;31;3747;8.3
+2007;Usaquén;69;5949;11.6
+2007;Usme;94;6350;14.8
+2008;Antonio Nariño;13;1249;10.4
+2008;Barrios Unidos;21;1735;12.1
+2008;Bosa;129;11111;11.6
+2008;Chapinero;14;1756;8.0
+2008;Ciudad Bolívar;153;11961;12.8
+2008;Distrito;1558;117563;13.3
+2008;Engativá;118;11490;10.3
+2008;Fontibón;74;5060;14.6
+2008;Kennedy;214;16257;13.2
+2008;La Candelaria;6;324;18.5
+2008;Los Mártires;24;1433;16.7
+2008;Puente Aranda;54;3769;14.3
+2008;Rafael Uribe Uribe;93;7125;13.1
+2008;San Cristóbal;119;7645;15.6
+2008;Santa Fe;29;2080;13.9
+2008;Sin Información;76;761;
+2008;Suba;199;15699;12.7
+2008;Sumapaz;0;59;0.0
+2008;Teusaquillo;16;1290;12.4
+2008;Tunjuelito;50;3746;13.3
+2008;Usaquén;74;6433;11.5
+2008;Usme;82;6580;12.5
+2009;Antonio Nariño;9;1298;6.9
+2009;Barrios Unidos;30;1744;17.2
+2009;Bosa;108;10964;9.9
+2009;Chapinero;21;1873;11.2
+2009;Ciudad Bolívar;165;11622;14.2
+2009;Distrito;1395;115659;12.1
+2009;Engativá;137;11287;12.1
+2009;Fontibón;66;4994;13.2
+2009;Kennedy;159;16023;9.9
+2009;La Candelaria;1;336;3.0
+2009;Los Mártires;16;1330;12.0
+2009;Puente Aranda;33;3454;9.6
+2009;Rafael Uribe Uribe;86;6763;12.7
+2009;San Cristóbal;111;7771;14.3
+2009;Santa Fe;26;1854;14.0
+2009;Sin Información;64;567;
+2009;Suba;174;15723;11.1
+2009;Sumapaz;1;43;23.3
+2009;Teusaquillo;17;1359;12.5
+2009;Tunjuelito;29;3588;8.1
+2009;Usaquén;49;6449;7.6
+2009;Usme;93;6617;14.1
+2010;Antonio Nariño;15;1133;13.2
+2010;Barrios Unidos;28;1677;16.7
+2010;Bosa;136;10641;12.8
+2010;Chapinero;12;2135;5.6
+2010;Ciudad Bolívar;140;11142;12.6
+2010;Distrito;1302;110032;11.8
+2010;Engativá;108;10564;10.2
+2010;Fontibón;53;4654;11.4
+2010;Kennedy;178;15705;11.3
+2010;La Candelaria;4;384;10.4
+2010;Los Mártires;22;1260;17.5
+2010;Puente Aranda;31;3143;9.9
+2010;Rafael Uribe Uribe;77;6209;12.4
+2010;San Cristóbal;90;7379;12.2
+2010;Santa Fe;22;1701;12.9
+2010;Sin Información;58;635;
+2010;Suba;174;14680;11.9
+2010;Sumapaz;0;35;0.0
+2010;Teusaquillo;9;1235;7.3
+2010;Tunjuelito;29;3278;8.8
+2010;Usaquén;45;6339;7.1
+2010;Usme;71;6103;11.6
+2011;Antonio Nariño;18;1305;13.8
+2011;Barrios Unidos;24;1780;13.5
+2011;Bosa;133;10432;12.7
+2011;Chapinero;26;1885;13.8
+2011;Ciudad Bolívar;144;10774;13.4
+2011;Distrito;1283;106228;12.1
+2011;Engativá;114;10207;11.2
+2011;Fontibón;47;4390;10.7
+2011;Kennedy;164;15344;10.7
+2011;La Candelaria;6;305;19.7
+2011;Los Mártires;13;1211;10.7
+2011;Puente Aranda;27;3172;8.5
+2011;Rafael Uribe Uribe;87;5964;14.6
+2011;San Cristóbal;96;6909;13.9
+2011;Santa Fe;26;1554;16.7
+2011;Sin Información;41;117;
+2011;Suba;158;14436;10.9
+2011;Sumapaz;0;18;0.0
+2011;Teusaquillo;16;1338;12.0
+2011;Tunjuelito;27;3105;8.7
+2011;Usaquén;45;5885;7.6
+2011;Usme;71;6097;11.6
+2012;Antonio Nariño;14;1120;12.5
+2012;Barrios Unidos;13;1679;7.7
+2012;Bosa;127;10393;12.2
+2012;Chapinero;18;2082;8.6
+2012;Ciudad Bolívar;135;10757;12.5
+2012;Distrito;1248;105314;11.9
+2012;Engativá;104;9631;10.8
+2012;Fontibón;45;4427;10.2
+2012;Kennedy;181;15621;11.6
+2012;La Candelaria;2;387;5.2
+2012;Los Mártires;19;1302;14.6
+2012;Puente Aranda;25;3042;8.2
+2012;Rafael Uribe Uribe;67;5777;11.6
+2012;San Cristóbal;97;6491;14.9
+2012;Santa Fe;23;1688;13.6
+2012;Sin Información;37;44;
+2012;Suba;155;14448;10.7
+2012;Sumapaz;1;44;22.7
+2012;Teusaquillo;20;1218;16.4
+2012;Tunjuelito;40;2931;13.6
+2012;Usaquén;48;6226;7.7
+2012;Usme;77;6006;12.8
+2013;Antonio Nariño;14;1341;10.4
+2013;Barrios Unidos;24;1702;14.1
+2013;Bosa;92;10109;9.1
+2013;Chapinero;18;1969;9.1
+2013;Ciudad Bolívar;113;10070;11.2
+2013;Distrito;1062;103237;10.3
+2013;Engativá;81;9524;8.5
+2013;Fontibón;37;4380;8.4
+2013;Kennedy;154;15227;10.1
+2013;La Candelaria;2;379;5.3
+2013;Los Mártires;16;1215;13.2
+2013;Puente Aranda;26;3079;8.4
+2013;Rafael Uribe Uribe;54;5797;9.3
+2013;San Cristóbal;65;6129;10.6
+2013;Santa Fe;21;1688;12.4
+2013;Sin Información;36;64;
+2013;Suba;142;14694;9.7
+2013;Sumapaz;0;41;0.0
+2013;Teusaquillo;16;1357;11.8
+2013;Tunjuelito;26;2926;8.9
+2013;Usaquén;60;5969;10.1
+2013;Usme;65;5577;11.7
+2014;Antonio Nariño;12;1280;9.4
+2014;Barrios Unidos;18;1634;11.0
+2014;Bosa;114;9886;11.5
+2014;Chapinero;19;1937;9.8
+2014;Ciudad Bolívar;109;10563;10.3
+2014;Distrito;1037;103842;10.0
+2014;Engativá;83;10061;8.2
+2014;Fontibón;35;4395;8.0
+2014;Kennedy;134;15065;8.9
+2014;La Candelaria;5;414;12.1
+2014;Los Mártires;9;1281;7.0
+2014;Puente Aranda;24;3183;7.5
+2014;Rafael Uribe Uribe;48;5504;8.7
+2014;San Cristóbal;69;6296;11.0
+2014;Santa Fe;16;1641;9.8
+2014;Sin Información;38;184;
+2014;Suba;148;14833;10.0
+2014;Sumapaz;0;35;0.0
+2014;Teusaquillo;12;1487;8.1
+2014;Tunjuelito;28;2783;10.1
+2014;Usaquén;57;6046;9.4
+2014;Usme;59;5334;11.1
+2015;Antonio Nariño;9;1195;7.5
+2015;Barrios Unidos;11;1572;7.0
+2015;Bosa;76;10436;7.3
+2015;Chapinero;13;1927;6.7
+2015;Ciudad Bolívar;106;10321;10.3
+2015;Distrito;938;102778;9.1
+2015;Engativá;84;9381;9.0
+2015;Fontibón;42;4262;9.9
+2015;Kennedy;143;15009;9.5
+2015;La Candelaria;3;344;8.7
+2015;Los Mártires;10;1171;8.5
+2015;Puente Aranda;19;3084;6.2
+2015;Rafael Uribe Uribe;46;5379;8.6
+2015;San Cristóbal;66;6028;10.9
+2015;Santa Fe;14;1540;9.1
+2015;Sin Información;35;419;
+2015;Suba;127;14825;8.6
+2015;Sumapaz;0;37;0.0
+2015;Teusaquillo;9;1302;6.9
+2015;Tunjuelito;21;2709;7.8
+2015;Usaquén;55;6366;8.6
+2015;Usme;49;5471;9.0
+2016;Antonio Nariño;17;1225;13.9
+2016;Barrios Unidos;13;1555;8.4
+2016;Bosa;88;10071;8.7
+2016;Chapinero;7;2045;3.4
+2016;Ciudad Bolívar;113;9788;11.5
+2016;Distrito;927;98653;9.4
+2016;Engativá;83;8804;9.4
+2016;Fontibón;29;4213;6.9
+2016;Kennedy;131;14139;9.3
+2016;La Candelaria;2;261;7.7
+2016;Los Mártires;10;1094;9.1
+2016;Puente Aranda;22;2849;7.7
+2016;Rafael Uribe Uribe;46;5382;8.5
+2016;San Cristóbal;54;5788;9.3
+2016;Santa Fe;13;1363;9.5
+2016;Sin Información;32;704;
+2016;Suba;135;13748;9.8
+2016;Sumapaz;0;22;0.0
+2016;Teusaquillo;5;1249;4.0
+2016;Tunjuelito;30;2618;11.5
+2016;Usaquén;43;6226;6.9
+2016;Usme;54;5509;9.8
+2017;Antonio Nariño;7;1026;6.8
+2017;Barrios Unidos;10;1452;6.9
+2017;Bosa;78;9425;8.3
+2017;Chapinero;6;1971;3.0
+2017;Ciudad Bolívar;76;9362;8.1
+2017;Distrito;864;92054;9.4
+2017;Engativá;74;8177;9.0
+2017;Fontibón;42;3774;11.1
+2017;Kennedy;133;13364;10.0
+2017;La Candelaria;5;338;14.8
+2017;Los Mártires;13;1041;12.5
+2017;Puente Aranda;22;2431;9.0
+2017;Rafael Uribe Uribe;42;4686;9.0
+2017;San Cristóbal;59;5213;11.3
+2017;Santa Fe;22;1571;14.0
+2017;Sin Información;6;200;
+2017;Suba;125;13254;9.4
+2017;Sumapaz;0;19;0.0
+2017;Teusaquillo;14;1194;11.7
+2017;Tunjuelito;36;2419;14.9
+2017;Usaquén;43;5931;7.3
+2017;Usme;51;5206;9.8
+2018;Antonio Nariño;7;918;7.6
+2018;Barrios Unidos;11;1338;8.2
+2018;Bosa;63;9108;6.9
+2018;Chapinero;17;1657;10.3
+2018;Ciudad Bolívar;107;9379;11.4
+2018;Distrito;806;87191;9.2
+2018;Engativá;76;7990;9.5
+2018;Fontibón;28;3711;7.5
+2018;Kennedy;103;12357;8.3
+2018;La Candelaria;2;250;8.0
+2018;Los Mártires;13;1082;12.0
+2018;Puente Aranda;19;2288;8.3
+2018;Rafael Uribe Uribe;38;4626;8.2
+2018;San Cristóbal;46;4669;9.9
+2018;Santa Fe;20;1533;13.0
+2018;Sin Información;19;178;
+2018;Suba;104;12118;8.6
+2018;Sumapaz;0;34;0.0
+2018;Teusaquillo;13;1187;11.0
+2018;Tunjuelito;15;2314;6.5
+2018;Usaquén;42;5482;7.7
+2018;Usme;63;4972;12.7
+2019;Antonio Nariño;9;951;9.5
+2019;Barrios Unidos;14;1270;11.0
+2019;Bosa;85;8953;9.5
+2019;Chapinero;19;1613;11.8
+2019;Ciudad Bolívar;85;9016;9.4
+2019;Distrito;815;85075;9.6
+2019;Engativá;76;7699;9.9
+2019;Fontibón;32;3546;9.0
+2019;Kennedy;106;11883;8.9
+2019;La Candelaria;0;281;0.0
+2019;Los Mártires;12;1308;9.2
+2019;Puente Aranda;22;2410;9.1
+2019;Rafael Uribe Uribe;47;4578;10.3
+2019;San Cristóbal;50;4341;11.5
+2019;Santa Fe;20;1685;11.9
+2019;Sin Información;17;127;
+2019;Suba;107;11974;8.9
+2019;Sumapaz;0;27;0.0
+2019;Teusaquillo;10;1283;7.8
+2019;Tunjuelito;29;2196;13.2
+2019;Usaquén;28;5228;5.4
+2019;Usme;47;4706;10.0
+2020;Antonio Nariño;8;995;8.0
+2020;Barrios Unidos;13;1276;10.2
+2020;Bosa;65;8508;7.6
+2020;Chapinero;12;1422;8.4
+2020;Ciudad Bolívar;88;8731;10.1
+2020;Distrito;651;79322;8.2
+2020;Engativá;61;7036;8.7
+2020;Fontibón;23;3117;7.4
+2020;Kennedy;90;10916;8.2
+2020;La Candelaria;2;236;8.5
+2020;Los Mártires;10;1207;8.3
+2020;Puente Aranda;24;2247;10.7
+2020;Rafael Uribe Uribe;36;4436;8.1
+2020;San Cristóbal;40;4156;9.6
+2020;Santa Fe;10;1511;6.6
+2020;Sin Información;6;116;
+2020;Suba;76;11248;6.8
+2020;Sumapaz;1;42;23.8
+2020;Teusaquillo;10;1093;9.1
+2020;Tunjuelito;13;2048;6.3
+2020;Usaquén;22;4564;4.8
+2020;Usme;41;4417;9.3
+2021;Antonio Nariño;5;792;6.3
+2021;Barrios Unidos;7;972;7.2
+2021;Bosa;68;7077;9.6
+2021;Chapinero;9;1261;7.1
+2021;Ciudad Bolívar;77;7622;10.1
+2021;Distrito;572;66988;8.5
+2021;Engativá;54;5619;9.6
+2021;Fontibón;18;2694;6.7
+2021;Kennedy;58;9187;6.3
+2021;La Candelaria;2;179;11.2
+2021;Los Mártires;15;1039;14.4
+2021;Puente Aranda;22;1906;11.5
+2021;Rafael Uribe Uribe;29;3621;8.0
+2021;San Cristóbal;34;3589;9.5
+2021;Santa Fe;7;1244;5.6
+2021;Sin Información;6;102;
+2021;Suba;70;9547;7.3
+2021;Sumapaz;0;35;0.0
+2021;Teusaquillo;10;819;12.2
+2021;Tunjuelito;11;1727;6.4
+2021;Usaquén;26;4146;6.3
+2021;Usme;44;3810;11.5
+2022;Antonio Nariño;9;743;12.1
+2022;Barrios Unidos;11;1008;10.9
+2022;Bosa;74;6690;11.1
+2022;Chapinero;6;1201;5.0
+2022;Ciudad Bolívar;78;6943;11.2
+2022;Distrito;590;64765;9.1
+2022;Engativá;53;5726;9.3
+2022;Fontibón;19;2733;7.0
+2022;Kennedy;88;9014;9.8
+2022;La Candelaria;1;196;5.1
+2022;Los Mártires;10;932;10.7
+2022;Puente Aranda;19;1812;10.5
+2022;Rafael Uribe Uribe;18;3499;5.1
+2022;San Cristóbal;23;3276;7.0
+2022;Santa Fe;9;1145;7.9
+2022;Sin Información;2;50;
+2022;Suba;76;9495;8.0
+2022;Sumapaz;0;23;0.0
+2022;Teusaquillo;7;953;7.3
+2022;Tunjuelito;13;1575;8.3
+2022;Usaquén;33;4194;7.9
+2022;Usme;41;3557;11.5
+2023;Antonio Nariño;5;713;7.0
+2023;Barrios Unidos;8;912;8.8
+2023;Bosa;56;6171;9.1
+2023;Chapinero;12;1190;10.1
+2023;Ciudad Bolívar;55;6387;8.6
+2023;Distrito;529;60912;8.7
+2023;Engativá;47;5759;8.2
+2023;Fontibón;21;2648;7.9
+2023;Kennedy;80;8337;9.6
+2023;La Candelaria;0;165;0.0
+2023;Los Mártires;16;928;17.2
+2023;Puente Aranda;15;1743;8.6
+2023;Rafael Uribe Uribe;27;3248;8.3
+2023;San Cristóbal;20;2908;6.9
+2023;Santa Fe;14;1073;13.0
+2023;Sin Información;1;13;
+2023;Suba;69;9131;7.6
+2023;Sumapaz;0;45;0.0
+2023;Teusaquillo;5;885;5.6
+2023;Tunjuelito;10;1432;7.0
+2023;Usaquén;35;3976;8.8
+2023;Usme;33;3248;10.2
+2024p;Antonio Nariño;7;622;11.3
+2024p;Barrios Unidos;4;894;4.5
+2024p;Bosa;59;5738;10.3
+2024p;Chapinero;5;1159;4.3
+2024p;Ciudad Bolívar;64;5974;10.7
+2024p;Distrito;526;56552;9.3
+2024p;Engativá;40;5161;7.8
+2024p;Fontibón;20;2540;7.9
+2024p;Kennedy;73;7879;9.3
+2024p;La Candelaria;1;153;6.5
+2024p;Los Mártires;7;872;8.0
+2024p;Puente Aranda;13;1619;8.0
+2024p;Rafael Uribe Uribe;23;2919;7.9
+2024p;San Cristóbal;23;2873;8.0
+2024p;Santa Fe;7;973;7.2
+2024p;Sin Información;13;21;
+2024p;Suba;72;8168;8.8
+2024p;Sumapaz;2;19;105.3
+2024p;Teusaquillo;9;779;11.6
+2024p;Tunjuelito;17;1337;12.7
+2024p;Usaquén;32;3839;8.3
+2024p;Usme;35;3013;11.6
+2025pp;Antonio Nariño;0;302;0.0
+2025pp;Barrios Unidos;3;455;6.6
+2025pp;Bosa;10;2687;3.7
+2025pp;Chapinero;3;506;5.9
+2025pp;Ciudad Bolívar;24;2925;8.2
+2025pp;Distrito;192;27038;7.1
+2025pp;Engativá;12;2490;4.8
+2025pp;Fontibón;6;1298;4.6
+2025pp;Kennedy;27;3809;7.1
+2025pp;La Candelaria;1;57;17.5
+2025pp;Los Mártires;3;398;7.5
+2025pp;Puente Aranda;5;775;6.5
+2025pp;Rafael Uribe Uribe;7;1396;5.0
+2025pp;San Cristóbal;11;1328;8.3
+2025pp;Santa Fe;5;400;12.5
+2025pp;Sin Información;4;5;
+2025pp;Suba;32;4067;7.9
+2025pp;Sumapaz;0;13;0.0
+2025pp;Teusaquillo;3;315;9.5
+2025pp;Tunjuelito;5;609;8.2
+2025pp;Usaquén;13;1772;7.3
+2025pp;Usme;18;1431;12.6
