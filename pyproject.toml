@@ -5,6 +5,7 @@ requires-python = ">=3.14"
 dependencies = [
     "matplotlib>=3.10.7",
     "pandas[excel]>=2.3.3",
+    "scipy>=1.16.3",
     "seaborn>=0.13.2",
 ]
 
