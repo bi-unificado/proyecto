@@ -137,7 +137,7 @@ Las siguientes variables se consideraron como potenciales confusoras y se incluy
 
 #### 3.3.1 Información Ambiental
 
-**I-BOCA (Instituto Distrital de Gestión de Riesgos y Cambio Climático - IDIGER)**
+##### I-BOCA (Instituto Distrital de Gestión de Riesgos y Cambio Climático - IDIGER)
 
 - Portal: [https://iboca.ambientebogota.gov.co](https://iboca.ambientebogota.gov.co)
 - Datos: Concentraciones horarias de $PM_{2.5}$ y $PM_{10}$ por estación de monitoreo
@@ -150,7 +150,7 @@ Las estaciones de monitoreo se asignaron a localidades mediante análisis del no
 
 #### 3.3.2 Información de Salud y Demografía
 
-**SaluData - Observatorio de Salud de Bogotá**
+##### SaluData - Observatorio de Salud de Bogotá
 
 - Portal: [https://saludata.saludcapital.gov.co](https://saludata.saludcapital.gov.co)
 - Datos obtenidos:
@@ -160,7 +160,7 @@ Las estaciones de monitoreo se asignaron a localidades mediante análisis del no
   - Mortalidad infantil (menores de un año)
 - Formato: CSV con delimitador punto y coma, codificación UTF-8
 
-**DANE - Departamento Administrativo Nacional de Estadística**
+##### DANE - Departamento Administrativo Nacional de Estadística
 
 - Cuadro de nacimientos por grupos de edad de la madre, Bogotá 2022
 - Fuente: [https://www.dane.gov.co/index.php/estadisticas-por-tema/salud/nacimientos-y-defunciones/nacimientos/nacimientos-2022](https://www.dane.gov.co/index.php/estadisticas-por-tema/salud/nacimientos-y-defunciones/nacimientos/nacimientos-2022)
@@ -168,7 +168,7 @@ Las estaciones de monitoreo se asignaron a localidades mediante análisis del no
 
 #### 3.3.3 Información Socioeconómica
 
-**Secretaría Distrital de Planeación**
+##### Secretaría Distrital de Planeación
 
 - Mapa de Estratificación Social de Bogotá (ArcGIS)
 - Fuente: [https://www.arcgis.com/apps/mapviewer/index.html?webmap=8ac1c0d2c59b4fe6980e4d06fb599f03](https://www.arcgis.com/apps/mapviewer/index.html?webmap=8ac1c0d2c59b4fe6980e4d06fb599f03)
@@ -211,11 +211,13 @@ Se implementó un modelo dimensional tipo estrella para optimizar consultas anal
 El proceso de Extracción, Transformación y Carga (ETL) se implementó en Python 3.14+ con las siguientes etapas:
 
 **1. Extracción:**
+
 - Lectura de archivos Excel IBOCA (saltando primeras 5 filas con metadatos)
 - Lectura de archivos CSV SaluData con manejo robusto de codificación (UTF-8-sig, latin-1)
 - Carga de cuadros DANE en formato .xls
 
 **2. Transformación:**
+
 - Conversión de formato ancho a largo para datos de $PM_{2.5}$ (función `melt`)
 - Mapeo de estaciones a localidades mediante regex
 - Filtrado de estaciones móviles (patrón "MÓVIL" o "Móvil")
@@ -225,6 +227,7 @@ El proceso de Extracción, Transformación y Carga (ETL) se implementó en Pytho
 - Unión de datasets por clave `Localidad` (left join desde datos ambientales)
 
 **3. Carga:**
+
 - Exportación a CSV de tablas dimensionales y de hechos
 - Generación de datasets para visualización en Google Looker Studio
 - Documentación de linaje de datos y calidad
@@ -251,6 +254,7 @@ IC_{95\%}(p_1 - p_2) = (p_1 - p_2) \pm 1.96 \times \sqrt{\frac{p_1(1-p_1)}{n_1} 
 $$
 
 Donde:
+
 - $p_1$: Proporción de bajo peso en localidades de alta exposición
 - $p_2$: Proporción de bajo peso en localidades de baja exposición
 - $n_1, n_2$: Tamaños muestrales respectivos
@@ -459,17 +463,17 @@ La implementación de tableros interactivos con componentes inferenciales dinám
 
 ### 9.2 Fuentes de Datos
 
-5. **Departamento Administrativo Nacional de Estadística (DANE).** Nacimientos por grupos de edad de la madre en Bogotá, 2022 (Cuadro 7). Recuperado de [https://www.dane.gov.co/index.php/estadisticas-por-tema/salud/nacimientos-y-defunciones/nacimientos/nacimientos-2022](https://www.dane.gov.co/index.php/estadisticas-por-tema/salud/nacimientos-y-defunciones/nacimientos/nacimientos-2022)
+1. **Departamento Administrativo Nacional de Estadística (DANE).** Nacimientos por grupos de edad de la madre en Bogotá, 2022 (Cuadro 7). Recuperado de [https://www.dane.gov.co/index.php/estadisticas-por-tema/salud/nacimientos-y-defunciones/nacimientos/nacimientos-2022](https://www.dane.gov.co/index.php/estadisticas-por-tema/salud/nacimientos-y-defunciones/nacimientos/nacimientos-2022)
 
-6. **Secretaría Distrital de Planeación.** Mapa de Estratificación Social de Bogotá (ArcGIS). Recuperado de [https://www.arcgis.com/apps/mapviewer/index.html?webmap=8ac1c0d2c59b4fe6980e4d06fb599f03](https://www.arcgis.com/apps/mapviewer/index.html?webmap=8ac1c0d2c59b4fe6980e4d06fb599f03)
+2. **Secretaría Distrital de Planeación.** Mapa de Estratificación Social de Bogotá (ArcGIS). Recuperado de [https://www.arcgis.com/apps/mapviewer/index.html?webmap=8ac1c0d2c59b4fe6980e4d06fb599f03](https://www.arcgis.com/apps/mapviewer/index.html?webmap=8ac1c0d2c59b4fe6980e4d06fb599f03)
 
-7. **Observatorio de Salud de Bogotá - SaluData.** Tasa de fecundidad por localidad y edad de la madre en Bogotá. Secretaría Distrital de Salud. Recuperado de [https://saludata.saludcapital.gov.co/osb/indicadores/fecundidad-por-edad-en-bogota](https://saludata.saludcapital.gov.co/osb/indicadores/fecundidad-por-edad-en-bogota)
+3. **Observatorio de Salud de Bogotá - SaluData.** Tasa de fecundidad por localidad y edad de la madre en Bogotá. Secretaría Distrital de Salud. Recuperado de [https://saludata.saludcapital.gov.co/osb/indicadores/fecundidad-por-edad-en-bogota](https://saludata.saludcapital.gov.co/osb/indicadores/fecundidad-por-edad-en-bogota)
 
-8. **Observatorio de Salud de Bogotá - SaluData.** Mortalidad infantil (menores de un año) por localidad en Bogotá. Secretaría Distrital de Salud. Recuperado de [https://saludata.saludcapital.gov.co/osb/indicadores/mortalidad-infantil](https://saludata.saludcapital.gov.co/osb/indicadores/mortalidad-infantil)
+4. **Observatorio de Salud de Bogotá - SaluData.** Mortalidad infantil (menores de un año) por localidad en Bogotá. Secretaría Distrital de Salud. Recuperado de [https://saludata.saludcapital.gov.co/osb/indicadores/mortalidad-infantil](https://saludata.saludcapital.gov.co/osb/indicadores/mortalidad-infantil)
 
-9. **Observatorio de Salud de Bogotá - SaluData.** Natalidad en Bogotá: Nacimientos por localidad y población total por localidad. Secretaría Distrital de Salud. Recuperado de [https://saludata.saludcapital.gov.co/osb/indicadores/natalidad-en-bogota](https://saludata.saludcapital.gov.co/osb/indicadores/natalidad-en-bogota)
+5. **Observatorio de Salud de Bogotá - SaluData.** Natalidad en Bogotá: Nacimientos por localidad y población total por localidad. Secretaría Distrital de Salud. Recuperado de [https://saludata.saludcapital.gov.co/osb/indicadores/natalidad-en-bogota](https://saludata.saludcapital.gov.co/osb/indicadores/natalidad-en-bogota)
 
-10. **Instituto Distrital de Gestión de Riesgos y Cambio Climático (IDIGER).** Red de Monitoreo de Calidad del Aire de Bogotá (RMCAB) - I-BOCA. Recuperado de [https://iboca.ambientebogota.gov.co](https://iboca.ambientebogota.gov.co)
+6. **Instituto Distrital de Gestión de Riesgos y Cambio Climático (IDIGER).** Red de Monitoreo de Calidad del Aire de Bogotá (RMCAB) - I-BOCA. Recuperado de [https://iboca.ambientebogota.gov.co](https://iboca.ambientebogota.gov.co)
 
 ---
 
