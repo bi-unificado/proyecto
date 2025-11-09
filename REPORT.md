@@ -284,8 +284,6 @@ $$
 IC_{95\%}(\beta_i) = \beta_i \pm 1.96 \times SE(\beta_i)
 $$
 
-**Notebook de referencia:** [notebooks/proyecto.ipynb](notebooks/proyecto.ipynb)
-
 ---
 
 ## 4. Objetivos del Estudio
@@ -306,64 +304,7 @@ Evaluar la diferencia en la proporción de bajo peso al nacer entre las localida
 
 ---
 
-## 5. Requerimientos Analíticos para Tableros Interactivos
-
-### 5.1 Filtros Dinámicos
-
-Los tableros de inteligencia de negocios desarrollados en Google Looker Studio incorporan los siguientes filtros para análisis exploratorio:
-
-| Tipo de Filtro | Variable | Descripción | Valores Ejemplo |
-|----------------|----------|-------------|-----------------|
-| Temporal | Mes / Trimestre | Permite agrupar datos por mes o trimestre | Q1, Q2, Q3, Q4 / Enero-Diciembre |
-| Geográfico | Localidad | Filtra por zona geográfica | Kennedy, Usaquén, Suba, etc. |
-| Ambiental | Nivel de Exposición | Agrupa según concentración de $PM_{2.5}$ | Alta ($\geq p_{75}$), Baja ($\leq p_{25}$) |
-| Demográfico | Sexo del Recién Nacido | Permite estratificar por sexo | Masculino, Femenino |
-| Demográfico | Edad Materna Promedio | Control por edad de la madre | 18-45 años (continuo o categorizado) |
-| Estadístico | Nivel de Confianza | Ajusta cálculo de intervalos de confianza | 90%, 95%, 99% |
-| Estadístico | Nivel de Significancia ($\alpha$) | Define umbral para pruebas de hipótesis | 0.10, 0.05, 0.01 |
-
-### 5.2 Componente Inferencial Dinámico
-
-Los tableros incluyen cálculos estadísticos que se actualizan automáticamente según los filtros seleccionados:
-
-| Elemento | Descripción | Fórmula / Método |
-|----------|-------------|------------------|
-| Tamaño muestral ($n$) | Número total de nacimientos en el subconjunto filtrado | Suma condicional |
-| Proporción de bajo peso | Porcentaje de recién nacidos <2,500 g | $\frac{\text{Bajo Peso}}{\text{Nacidos}} \times 100$ |
-| Tabla de contingencia 2x2 | Exposición (alta/baja) × Bajo Peso (sí/no) | Tabla cruzada dinámica |
-| OR (Odds Ratio) | Estimación de asociación | $OR = \frac{ad}{bc}$ |
-| Intervalo de Confianza | IC del OR o diferencia de proporciones | Según nivel de confianza seleccionado |
-| Valor $p$ | Prueba $\chi^2$ o Fisher | Cambia según $\alpha$ seleccionado |
-| Interpretación automática | Texto explicativo basado en resultados | Condicional: "Significativo" si $p < \alpha$ e IC excluye valor nulo |
-
-### 5.3 Visualizaciones Analíticas
-
-Los tableros incluyen los siguientes componentes visuales:
-
-1. **Series Temporales:**
-   - Tendencia trimestral de $PM_{2.5}$ por localidad
-   - Evolución de porcentaje de bajo peso al nacer a lo largo de 2022
-
-2. **Gráficos de Barras:**
-   - Comparación de OR entre subgrupos (sexo, trimestre, localidad)
-   - Ranking de localidades por concentración de $PM_{2.5}$
-
-3. **Tarjetas de KPI (Scorecards):**
-   - Promedio general de $PM_{2.5}$ en Bogotá
-   - Prevalencia global de bajo peso al nacer
-   - Número de localidades en categoría de alta exposición
-   - OR general con IC 95%
-
-4. **Mapas Geográficos:**
-   - Coropletas con clasificación de exposición por localidad
-   - Superposición de tasa de bajo peso al nacer
-
-5. **Matrices de Correlación:**
-   - Relación entre $PM_{2.5}$, bajo peso, mortalidad infantil y edad materna
-
----
-
-## 6. Limitaciones del Estudio
+## 5. Limitaciones del Estudio
 
 1. **Cobertura geográfica incompleta:** Solo 12 de las 20 localidades de Bogotá cuentan con estaciones de monitoreo de calidad del aire, lo que limita la representatividad del análisis a 60% de las localidades.
 
@@ -373,57 +314,13 @@ Los tableros incluyen los siguientes componentes visuales:
 
 4. **Asignación de exposición:** La exposición a $PM_{2.5}$ se asigna por localidad de residencia, sin considerar movilidad intraurbana de las madres o exposición en lugares de trabajo.
 
-5. **Temporalidad:** Se dispone solo de datos para el año 2022, lo que imposibilita análisis de tendencias multi-anuales o validación de hallazgos en otros períodos.
-
-6. **Estaciones móviles excluidas:** Las estaciones de monitoreo móviles fueron excluidas del análisis debido a la falta de asignación geográfica fija, lo que puede subestimar la exposición en localidades sin estaciones permanentes.
-
-7. **Datos de estrato socioeconómico:** La información de estratificación socioeconómica no estaba disponible en las bases de datos utilizadas y debió ser inferida a partir de mapas georreferenciados, introduciendo potencial sesgo de medición.
+5. **Estaciones móviles excluidas:** Las estaciones de monitoreo móviles fueron excluidas del análisis debido a la falta de asignación geográfica fija, lo que puede subestimar la exposición en localidades sin estaciones permanentes.
 
 ---
 
-## 7. Conclusiones
+## 6. Referencias
 
-Este proyecto demuestra la viabilidad de integrar fuentes de datos ambientales, clínicas y demográficas mediante arquitecturas de inteligencia de negocios aplicadas al sector salud. El modelo dimensional implementado permite análisis exploratorios y confirmatorios con actualización dinámica de métricas estadísticas, facilitando la toma de decisiones basada en evidencia.
-
-Los hallazgos preliminares sugieren la existencia de variaciones geográficas en la exposición a $PM_{2.5}$ y en la prevalencia de bajo peso al nacer entre localidades de Bogotá, aunque la significancia estadística y magnitud de la asociación requieren confirmación mediante análisis ajustados por todas las variables de confusión identificadas.
-
-La implementación de tableros interactivos con componentes inferenciales dinámicos representa un avance metodológico importante para la vigilancia epidemiológica ambiental, permitiendo a los tomadores de decisiones en salud pública explorar escenarios, identificar grupos vulnerables y evaluar el impacto potencial de intervenciones.
-
----
-
-## 8. Recomendaciones
-
-### 8.1 Para la Investigación
-
-1. **Ampliar cobertura temporal:** Replicar el análisis con datos de múltiples años para validar tendencias y evaluar el impacto de políticas de control de contaminación.
-
-2. **Análisis multinivel:** Incorporar datos individuales cuando estén disponibles para abordar la heterogeneidad dentro de las localidades.
-
-3. **Modelado de exposición avanzado:** Utilizar técnicas de interpolación espacial o modelos de dispersión atmosférica para estimar exposición en localidades sin estaciones de monitoreo.
-
-4. **Análisis de ventanas de exposición:** Evaluar períodos críticos del embarazo (primer trimestre, segundo trimestre, tercer trimestre) y su relación diferencial con el bajo peso al nacer.
-
-### 8.2 Para la Salud Pública
-
-1. **Vigilancia focalizada:** Intensificar el monitoreo de salud materno-infantil en localidades identificadas con alta exposición a $PM_{2.5}$.
-
-2. **Intervenciones preventivas:** Implementar programas de educación prenatal sobre riesgos de contaminación atmosférica y medidas de protección (purificadores de aire domésticos, uso de mascarillas en días de alta contaminación).
-
-3. **Coordinación intersectorial:** Fortalecer la articulación entre las secretarías de Salud y de Ambiente para políticas integradas de salud ambiental.
-
-### 8.3 Para la Inteligencia de Negocios en Salud
-
-1. **Automatización de pipeline ETL:** Establecer procesos automatizados de actualización mensual de los tableros con nuevos datos de I-BOCA y SaluData.
-
-2. **Alertas tempranas:** Configurar notificaciones automáticas cuando se detecten incrementos significativos en $PM_{2.5}$ o en proporciones de bajo peso al nacer.
-
-3. **Capacitación de usuarios:** Desarrollar programas de formación para personal de salud pública en el uso de tableros analíticos y la interpretación de intervalos de confianza y pruebas de hipótesis.
-
----
-
-## 9. Referencias
-
-### 9.1 Literatura Científica
+### 6.1 Literatura Científica
 
 1. **Leung M, Weisskopf M G, Laden F, et al.** Exposure to PM2.5 during pregnancy and fetal growth in Eastern Massachusetts, USA. *Environmental Health Perspectives.* 2022;130(1):017004. doi:10.1289/EHP9824
 
@@ -433,7 +330,7 @@ La implementación de tableros interactivos con componentes inferenciales dinám
 
 4. **UNICEF and WHO.** Low Birthweight: Country, regional and global estimates. New York: UNICEF; 2004.
 
-### 9.2 Fuentes de Datos
+### 6.2 Fuentes de Datos
 
 1. **Departamento Administrativo Nacional de Estadística (DANE).** Nacimientos por grupos de edad de la madre en Bogotá, 2022 (Cuadro 7). Recuperado de [https://www.dane.gov.co/index.php/estadisticas-por-tema/salud/nacimientos-y-defunciones/nacimientos/nacimientos-2022](https://www.dane.gov.co/index.php/estadisticas-por-tema/salud/nacimientos-y-defunciones/nacimientos/nacimientos-2022)
 
@@ -446,7 +343,3 @@ La implementación de tableros interactivos con componentes inferenciales dinám
 5. **Observatorio de Salud de Bogotá - SaluData.** Natalidad en Bogotá: Nacimientos por localidad y población total por localidad. Secretaría Distrital de Salud. Recuperado de [https://saludata.saludcapital.gov.co/osb/indicadores/natalidad-en-bogota](https://saludata.saludcapital.gov.co/osb/indicadores/natalidad-en-bogota)
 
 6. **Instituto Distrital de Gestión de Riesgos y Cambio Climático (IDIGER).** Red de Monitoreo de Calidad del Aire de Bogotá (RMCAB) - I-BOCA. Recuperado de [https://iboca.ambientebogota.gov.co](https://iboca.ambientebogota.gov.co)
-
----
-
-**Nota:** Este informe constituye un documento técnico-científico desarrollado en el marco del curso de Inteligencia de Negocios (IN & EDC - 202502), demostrando la aplicación de metodologías de análisis de datos, modelado dimensional y visualización analítica a problemas de salud pública ambiental.
