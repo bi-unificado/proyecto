@@ -206,34 +206,6 @@ Se implementó un modelo dimensional tipo estrella para optimizar consultas anal
    - Campos: `id_exposicion`, `Categoria_Exposicion`
    - Valores: Alta, Media, Baja
 
-#### 3.4.2 Pipeline ETL
-
-El proceso de Extracción, Transformación y Carga (ETL) se implementó en Python 3.14+ con las siguientes etapas:
-
-**1. Extracción:**
-
-- Lectura de archivos Excel IBOCA (saltando primeras 5 filas con metadatos)
-- Lectura de archivos CSV SaluData con manejo robusto de codificación (UTF-8-sig, latin-1)
-- Carga de cuadros DANE en formato .xls
-
-**2. Transformación:**
-
-- Conversión de formato ancho a largo para datos de $PM_{2.5}$ (función `melt`)
-- Mapeo de estaciones a localidades mediante regex
-- Filtrado de estaciones móviles (patrón "MÓVIL" o "Móvil")
-- Normalización de nombres de localidades (eliminación de acentos, mayúsculas)
-- Agregación temporal: horaria → diaria → trimestral
-- Cálculo de percentiles de exposición ($p_{25}$, $p_{75}$)
-- Unión de datasets por clave `Localidad` (left join desde datos ambientales)
-
-**3. Carga:**
-
-- Exportación a CSV de tablas dimensionales y de hechos
-- Generación de datasets para visualización en Google Looker Studio
-- Documentación de linaje de datos y calidad
-
-**Notebook de referencia:** [notebooks/base_integrada.ipynb](notebooks/base_integrada.ipynb)
-
 ### 3.5 Análisis Estadístico
 
 #### 3.5.1 Estadística Descriptiva
